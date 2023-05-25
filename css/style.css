@@ -1,0 +1,190 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body{
+    background-color: navajowhite;
+}
+
+.contain{
+    /* 100vh toma toda la pantalla del navegador */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr 2fr 1fr 0.5fr ;
+
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+}
+
+/* estilos header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    grid-area: header;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+header nav ul li{
+    padding: 5px;
+    border: 3px solid black;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:active{
+    background-color: whitesmoke;
+}
+
+header nav ul li a:hover{
+    font-size: 2rem;
+}
+
+/* estilos main */
+
+main{
+    grid-area: main;
+}
+
+main h1{
+    text-align: center;
+}
+
+.entrada{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/entrada.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media (max-width: 480px){
+    .entrada{
+        text-align: center;
+        background-position: bottom;
+    }
+    .form{
+        background-color: black;
+        color: navajowhite;
+    }
+}
+
+@media (max-width:375px){
+    header{
+        font-size: 10px;
+    }
+    footer{
+        font-size: 10px;
+    }
+}
+
+.vehiculos{
+    display: flex;
+    flex-direction:row-reverse ;
+    flex-wrap: wrap;
+    /* eje horizontal en row */
+    justify-content: space-evenly;
+    /* eje vertical en row */
+    align-items: center;
+}
+
+.vehiculos-hijo{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.tienda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.cotizar{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+    gap: 3rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.cotizar-cero{
+    text-align: center;
+}
+
+.cotizar-uno{
+    text-align: center;
+}
+
+.cotizar-uno:hover{
+    font-size: 2rem;
+}
+
+.cotizar-dos{
+    text-align: center;
+}
+
+.cotizar-dos:hover{
+    font-size: 2rem;
+}
+
+.cotizar-tres{
+    text-align: center;
+}
+
+.cotizar-tres:hover{
+    font-size: 2rem;
+}
+
+.caja{
+    width: 500px;
+}
+
+/* estilos footer */
+
+footer{
+    background-color: black;
+    grid-area: footer;
+}
+
+footer h2{
+    color: navajowhite;
+    text-align: center;
+}
+
+footer p{
+    color: navajowhite;
+    text-align: center;
+}
+
+.contacto{
+   display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+}
+
