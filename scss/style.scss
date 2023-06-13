@@ -1,0 +1,142 @@
+//linea de comentario
+/* comentario en sass y css */
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+//import
+
+@import "extra/variables";
+@import "extra/listas";
+@import "extra/mixin";
+@import "extra/extend";
+@import "extra/mediaquieres";
+//nesting
+
+body{
+    background-color: nth($list: $lista-colores, $n:1 );
+    .contain{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+        grid-template-areas: 
+            "header header header"
+            "main main main"
+            "main main main"
+            "footer footer footer";
+    }
+}
+
+header{
+    @include flex(flex, row, space-between, center );
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    grid-area: header;
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            li{
+                padding: 0.5rem;
+                border: 3px solid $color-secundario;
+                a{
+                    text-decoration: none;
+                    color: $color-secundario;
+                }
+                a:hover{
+                    background-color: whitesmoke;
+                    
+                } 
+            }
+            li:hover{
+                    transform: scale(0.8);
+                    transition: 0.5s;
+                    cursor: pointer;
+                }
+        }
+    }
+}
+
+main{
+    grid-area: main;
+    h1{
+        text-align: center;
+    }
+    .entrada{
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        background-image: url(../img/entrada.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .vehiculos{
+        @include flex(flex, row-reverse, space-evenly, center);
+    }
+    .vehiculos-hijo{
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .tienda{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+    .cotizar{
+        @include flex(flex, row, center, center);
+        gap: 2rem;
+    }
+    .cotizar-cero{
+        text-align: center;
+    }
+    .cotizar-uno{
+        text-align: center;
+        @extend %cotiza;
+    }
+    .cotizar-uno:hover{
+        font-size: 1.5rem;        
+    }
+    .cotizar-dos{
+        text-align: center;
+        @extend %cotiza;
+    }
+    .cotizar-dos:hover{
+        font-size: 1.5rem;
+    }
+    .cotizar-tres{
+        text-align: center;
+        @extend %cotiza;
+    }
+    .cotizar-tres:hover{
+        font-size: 1.5rem;
+    }
+}
+
+footer{
+    background-color: $color-secundario;
+    grid-area: footer;
+    h2{
+        color: nth($list: $lista-colores, $n:3 );
+        text-align: center;
+    }
+    p{
+        color: nth($list: $lista-colores, $n:4 );
+        text-align: center;
+    }
+    .contacto{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}

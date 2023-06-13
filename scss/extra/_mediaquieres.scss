@@ -1,0 +1,54 @@
+@import "../extra/mixin";
+
+@media (max-width:480px) {
+    .entrada{
+        background-position: bottom;
+    }
+    .tienda{
+        width: 20rem;
+    }
+    .tienda-general{
+        margin-top: 1rem;
+        @include flex(flex, column, center, center);
+    }
+    .cotizar-cero{
+        display: none;
+    }
+    .cotizar{
+        display: flex;
+        flex-direction: column;
+    }
+    .vehiculos-hijo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .peugeot{
+        width: 170px;
+    }
+    .mercedes{
+        width: 170px;
+    }
+    .p-uno , .p-tres{
+        display: none;
+    }
+}
+
+@media (min-width:600px) and (max-width:1024px) {
+    .tienda-general{
+        @include flex(flex, column, center, center);
+    }
+    .peugeot{
+        width: 380px;
+    }
+    .mercedes{
+        width: 380px;
+    }
+    .cotizar-cero{
+        display: none;
+    }
+    .cotizar{
+        height: 50%;
+        @include flex(flex, row, center, center);
+    }
+}

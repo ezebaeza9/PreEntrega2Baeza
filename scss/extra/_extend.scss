@@ -1,0 +1,10 @@
+@import "../extra/listas";
+//extend
+
+%cotiza{
+    border: 3px dotted black;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-image: linear-gradient(nth($list: $lista-colores, $n:2 ),nth($list: $lista-colores, $n:3 ));
+    box-shadow: 1rem 1rem 0.5rem  nth($list: $lista-colores, $n:6 );
+}
