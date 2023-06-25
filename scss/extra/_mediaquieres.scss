@@ -19,15 +19,16 @@
         flex-direction: column;
     }
     .vehiculos-hijo{
+        height: 350px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .peugeot{
-        width: 170px;
+        width: 150px;
     }
     .mercedes{
-        width: 170px;
+        width: 150px;
     }
     .p-uno , .p-tres{
         display: none;

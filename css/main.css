@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-main .cotizar-uno, main .cotizar-dos, main .cotizar-tres {
+body main .cotizar-uno, body main .cotizar-dos, body main .cotizar-tres {
   border: 3px dotted black;
   margin: 1rem;
   padding: 0.5rem;
@@ -29,13 +29,14 @@ main .cotizar-uno, main .cotizar-dos, main .cotizar-tres {
     display: flex;
     flex-direction: column; }
   .vehiculos-hijo {
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center; }
   .peugeot {
-    width: 170px; }
+    width: 150px; }
   .mercedes {
-    width: 170px; }
+    width: 150px; }
   .p-uno, .p-tres {
     display: none; } }
 
@@ -66,90 +67,87 @@ body {
     grid-template-columns: auto;
     grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
     grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer"; }
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-  grid-area: header; }
-  header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap; }
-    header nav ul li {
-      padding: 0.5rem;
-      border: 3px solid black; }
-      header nav ul li a {
-        text-decoration: none;
-        color: black; }
-      header nav ul li a:hover {
-        background-color: whitesmoke; }
-    header nav ul li:hover {
-      transform: scale(0.8);
-      transition: 0.5s;
-      cursor: pointer; }
-
-main {
-  grid-area: main; }
-  main h1 {
-    text-align: center; }
-  main .entrada {
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    background-image: url(../img/entrada.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; }
-  main .vehiculos {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center; }
-  main .vehiculos-hijo {
-    margin: 1rem;
-    padding: 1rem; }
-  main .tienda {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem; }
-  main .cotizar {
+  body header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 2rem; }
-  main .cotizar-cero {
-    text-align: center; }
-  main .cotizar-uno {
-    text-align: center; }
-  main .cotizar-uno:hover {
-    font-size: 1.5rem; }
-  main .cotizar-dos {
-    text-align: center; }
-  main .cotizar-dos:hover {
-    font-size: 1.5rem; }
-  main .cotizar-tres {
-    text-align: center; }
-  main .cotizar-tres:hover {
-    font-size: 1.5rem; }
-
-footer {
-  background-color: black;
-  grid-area: footer; }
-  footer h2 {
-    color: #efa638;
-    text-align: center; }
-  footer p {
-    color: #aa7524;
-    text-align: center; }
-  footer .contacto {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem; }
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    grid-area: header; }
+    body header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap; }
+      body header nav ul li {
+        padding: 0.5rem;
+        border: 3px solid black; }
+        body header nav ul li:hover {
+          transform: scale(0.8);
+          transition: 0.5s;
+          cursor: pointer; }
+        body header nav ul li a {
+          text-decoration: none;
+          color: black; }
+          body header nav ul li a:hover {
+            background-color: whitesmoke; }
+  body main {
+    grid-area: main; }
+    body main h1 {
+      text-align: center; }
+    body main .entrada {
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      background-image: url(../img/entrada.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
+    body main .vehiculos {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      align-items: center; }
+      body main .vehiculos-hijo {
+        margin: 1rem;
+        padding: 1rem; }
+    body main .tienda {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem; }
+    body main .cotizar {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem; }
+      body main .cotizar-cero {
+        text-align: center; }
+      body main .cotizar-uno {
+        text-align: center; }
+        body main .cotizar-uno:hover {
+          font-size: 1.5rem; }
+      body main .cotizar-dos {
+        text-align: center; }
+        body main .cotizar-dos:hover {
+          font-size: 1.5rem; }
+      body main .cotizar-tres {
+        text-align: center; }
+        body main .cotizar-tres:hover {
+          font-size: 1.5rem; }
+  body footer {
+    background-color: black;
+    grid-area: footer; }
+    body footer h2 {
+      color: #efa638;
+      text-align: center; }
+    body footer p {
+      color: #aa7524;
+      text-align: center; }
+    body footer .contacto {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem; }
