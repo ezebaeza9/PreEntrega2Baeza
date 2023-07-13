@@ -14,9 +14,10 @@ body main .cotizar-uno, body main .cotizar-dos, body main .cotizar-tres {
 
 @media (max-width: 480px) {
   .entrada {
-    background-position: bottom; }
+    background-position: bottom;
+    padding: 1rem; }
   .tienda {
-    width: 20rem; }
+    width: 10rem; }
   .tienda-general {
     margin-top: 1rem;
     display: flex;
@@ -27,16 +28,21 @@ body main .cotizar-uno, body main .cotizar-dos, body main .cotizar-tres {
     display: none; }
   .cotizar {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    font-size: 0.75rem;
+    margin-top: 1,5rem; }
   .vehiculos-hijo {
-    height: 350px;
+    height: 20rem;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-items: center; }
   .peugeot {
-    width: 150px; }
+    margin-top: 2rem;
+    width: 7rem; }
   .mercedes {
-    width: 150px; }
+    margin-top: 2rem;
+    width: 7rem; }
   .p-uno, .p-tres {
     display: none; } }
 
@@ -99,12 +105,14 @@ body {
       text-align: center; }
     body main .entrada {
       text-align: center;
+      color: #823d1d;
       height: 100%;
       width: 100%;
       background-image: url(../img/entrada.png);
       background-repeat: no-repeat;
       background-size: contain;
-      background-position: center; }
+      background-position: center;
+      padding: 0.5rem; }
     body main .vehiculos {
       display: flex;
       flex-direction: row-reverse;

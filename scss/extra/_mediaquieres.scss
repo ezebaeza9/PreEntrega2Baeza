@@ -3,9 +3,10 @@
 @media (max-width:480px) {
     .entrada{
         background-position: bottom;
+        padding: 1rem;
     }
     .tienda{
-        width: 20rem;
+        width: 10rem;
     }
     .tienda-general{
         margin-top: 1rem;
@@ -17,18 +18,23 @@
     .cotizar{
         display: flex;
         flex-direction: column;
+        font-size: 0.75rem;
+        margin-top: 1,5rem;
     }
     .vehiculos-hijo{
-        height: 350px;
+        height: 20rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-items: center;
     }
     .peugeot{
-        width: 150px;
+        margin-top: 2rem;
+        width: 7rem;
     }
     .mercedes{
-        width: 150px;
+        margin-top: 2rem;
+        width: 7rem;
     }
     .p-uno , .p-tres{
         display: none;
