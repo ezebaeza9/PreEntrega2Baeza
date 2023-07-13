@@ -5,9 +5,6 @@
         background-position: bottom;
         padding: 1rem;
     }
-    .tienda{
-        width: 10rem;
-    }
     .tienda-general{
         margin-top: 1rem;
         @include flex(flex, column, center, center);
@@ -36,7 +33,7 @@
         margin-top: 2rem;
         width: 7rem;
     }
-    .p-uno , .p-tres{
+    .p-uno , .p-tres, .mb-2{
         display: none;
     }
 }

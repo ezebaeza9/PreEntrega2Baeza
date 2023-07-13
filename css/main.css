@@ -16,8 +16,6 @@ body main .cotizar-uno, body main .cotizar-dos, body main .cotizar-tres {
   .entrada {
     background-position: bottom;
     padding: 1rem; }
-  .tienda {
-    width: 10rem; }
   .tienda-general {
     margin-top: 1rem;
     display: flex;
@@ -43,7 +41,7 @@ body main .cotizar-uno, body main .cotizar-dos, body main .cotizar-tres {
   .mercedes {
     margin-top: 2rem;
     width: 7rem; }
-  .p-uno, .p-tres {
+  .p-uno, .p-tres, .mb-2 {
     display: none; } }
 
 @media (min-width: 600px) and (max-width: 1024px) {
